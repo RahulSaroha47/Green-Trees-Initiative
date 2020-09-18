@@ -1,0 +1,783 @@
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: "flood-std";
+    src: url("../Fonts/FloodStd.otf") format("opentype");             
+}
+
+a {
+    text-decoration: none;
+    color: #354463
+}
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+.header {
+    color: #354463;
+    font-family: Helvetica; 
+}
+
+.logo {
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.menu {
+    display: grid;
+    font-weight: lighter;
+    white-space: nowrap;
+}
+
+.donate-btn {
+    white-space: nowrap;
+}
+button {
+    background: #C1F7D5 0% 0% no-repeat padding-box;
+    color: #354463;
+    border-radius: 100px;
+    opacity: 1;
+    border: none;
+    font-weight: bold;
+}
+
+.hero-section {
+    width: 100%;
+    opacity: 0.76;
+}
+
+.issue {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    color: #354463;
+}
+.badge {
+    background: #354463;
+    color: #FFFFFF;
+    position: absolute;
+    display: grid;
+    align-items: center; 
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.message-text {
+    text-align: left;
+    font-weight: bold;
+}
+.message-link {
+    text-align: left;
+    text-decoration: underline;
+}
+
+.slogan {
+    font-family: flood-std, sans-serif;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.action-menu {
+    background: #C1F7D5 0% 0% no-repeat padding-box;
+    opacity: 1;
+    color: #354463;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+.what-we-do-section {
+    background: #354463 0% 0% no-repeat padding-box;
+    opacity: 1;
+    overflow: hidden;
+}
+
+.mission-head {
+    background: #FFFFFF;
+    color: #354463;
+    font-family: Arial, Helvetica, sans-serif;
+    position: static;
+}
+
+.mission {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: grid;
+    color: #354463;
+}
+
+.mission-1 .pic {
+    background: transparent url('../Images/tree-planting.png') 100% 100% no-repeat padding-box;
+    opacity: 1;
+}
+.mission-2 .pic {
+    background: transparent url('../Images/education-training.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.mission-3 .pic {
+    background: transparent url('../Images/advocacy.png') 100% 100% no-repeat padding-box;
+    opacity: 1;
+}
+.mission .pic{
+    background-size: 100% 100%;
+}
+
+.mission-subject {
+    font-family: Helvetica;
+    font-weight: lighter;
+}
+
+
+@media (max-width: 1440px) {
+    .header .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        height: 18vh;
+    }
+
+    .logo {
+        font-size: 1.6vw;
+    }
+
+    .menu {
+        grid-template-columns: 0.28fr 0.07875fr 0.16125fr 0.09625fr 0.14375fr 0.15125fr 0.08875fr; 
+        justify-content: space-evenly;
+        font-size: 1.2vw;
+    }
+    .about {
+        grid-column: 2/3; 
+    }
+    .stories {
+        grid-column: 4/5;
+    }
+    .news {
+        grid-column: 6/7;
+    }
+
+    .donate-btn > button {
+        width: 100%;
+        padding: 2vh;
+        font-size: 1.2vw;
+    }
+
+    .hero-section {
+        background: transparent url("../Images/home-D-1.png") 0% 0% no-repeat padding-box;
+        background-color: #354463;
+        background-size: 100% 100%;
+        height: 82vh;
+    } 
+    
+    .hero-section .wrapper {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        align-items: center; 
+        height: 100%;  
+        grid-gap: 13vw;
+    }
+
+    .hero-tagline {
+        margin: 0 0 18vh 0;
+    }
+    
+    .issue-head {
+        height: 5vh;
+        width: 10vw;
+        left: 3.6vw;
+        top: -2.5vh;
+        font-size: 1vw;
+    }
+
+    .message {
+        padding: 2.5vh 3.5vw 8vh 3.5vw;
+    }
+    .message-text {
+        font-size: 2.7vw;
+    }
+    .message-link {
+        font-size: 1.1vw;
+        white-space: nowrap;
+    }
+
+    .slogan {
+        align-content: flex-start;
+        font-size: 4vw;
+    }
+
+    .action-menu .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 2vw;
+        padding: 9vh 0;
+    }
+    .action > h3 {
+        font-size: 1.8vw;
+        margin: 0;
+    }
+    .action > p {
+        font-size: 1.19vw;
+        margin: 0;
+    }
+    .action-head {
+        padding: 2vh;
+        width: 10vw;
+        font-size: 1.14vw;
+        top: -2.5vh;
+        left: 45vw;
+    }
+
+    .mission-head {
+        font-size: 1.2vw;
+        padding: 2vh;
+        width: 10vw;
+        margin-top: 9vh;
+    }
+
+    .mission-text {
+        text-align: left;
+        font: bold 2.9vw Helvetica;
+        letter-spacing: 0;
+        color: #FFFFFF;
+        opacity: 1;
+        margin-top: 5vh;
+        margin-bottom: 12vh;
+    }
+    .mission-text > p {
+        margin: 0;
+    }
+
+    .missions {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 7vw;
+        margin-bottom: 13vh;
+    }
+
+    .mission {
+        grid-template-rows: 2fr 2fr 0.7fr;
+    }
+    .pic {
+        position: relative;
+        left: 2vw;
+        bottom: 3.7vh;
+    }
+    .mission-subject {
+        text-align: left;
+        padding: 0 2vw;
+        font-size: 1.2vw;
+    }
+    .mission-subject > h3 {
+        margin: 0;
+        font-size: 2vw;
+        font-weight: bold;
+    }
+    .mission-subject > p {
+        margin-bottom: 3vh;
+    }
+
+    .read-more-btn > button {
+        padding: 2vh 2vw;
+        font-size: 1.2vw;
+        margin-left: 2vw;
+    }
+
+    .facts-section {
+        background: transparent url('../Images/home-D-3.png') 0% 0% no-repeat padding-box;
+        opacity: 1;
+        background-size: 100% 100%; 
+    }
+    
+    .facts-section .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 13vh 0;  
+    }
+
+    .words {
+        text-align: left;
+    }
+    .facts-tagline {
+        font-family: flood-std;
+        color: #FFFFFF;
+        font-size: 4vw;
+        padding: 2vh 19vw 5vh 0;
+    }
+
+    .take-action-btn > button {
+        font-size: 1.4vw;
+        padding: 1vh 2vw;
+        font-weight: bold;
+    }
+
+    .facts {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 5vh;
+    }
+    .fact {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        background: #FFFFFF;
+        padding: 7vh 4vw;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .fact-1 {
+        position: relative;
+    }
+    .fact-head {
+        font-size: 1.3vw;
+        position: absolute;
+        padding: 1.2vh 1.2vw;
+        top: -2.4vh;
+        left: 4vw;
+    }
+    .sub {
+        color: #354463;
+    }
+    .sub-1 > h3 {
+        font-weight: bold;
+        margin: 0;
+        font-size: 3.5vw;
+    }
+    .sub-2 {
+        grid-area: 2/1/3/2;
+    }
+    .sub-2 > p{
+        margin: 0;
+        font-size: 1.4vw;
+        font-weight: lighter;
+    }
+
+    .icon {
+        background: #C1F7D5 0% 0% no-repeat padding-box;
+        opacity: 1;
+        border-radius:50% 50% 50% 50%;
+        text-align: center;
+        margin: 1vh 2.5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        height: 18vh;
+    }
+
+    .logo {
+        grid-area: 1/1/2/2;
+        align-self: flex-end;
+        font-size: 2.6vw;
+        padding-top: 2vh;
+    }
+
+    .menu {
+        grid-area: 2/1/3/2;
+        grid-template-columns: 1fr 0.5fr 1fr 0.5fr 2fr;
+        font-size: 2vw;
+    }
+    .about {
+        grid-column: 1/2;
+    }
+    .stories {
+        grid-column: 3/4;
+    }
+    .news {
+        grid-column: 5/6;
+    }
+
+    .donate-btn {
+        grid-area: 1/2/3/3;
+        text-align: end;
+    }
+    .donate-btn > button {
+        width: 140px;
+        font-size: 2.3vw;
+    }
+
+    .hero-section {
+        background: transparent url("../Images/home-T-1.png") 0% 0% no-repeat padding-box;
+        background-color: #354463;
+        background-size: 100% 100%;
+        height: 82vh;
+    }
+    .hero-section .wrapper {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+        padding: 0;
+    }
+
+    .hero-tagline {
+        grid-row: 1/2;
+        text-align: start;
+        margin: 0;        
+    }
+    .slogan {
+        font-size: 5vw;
+        padding: 0;
+    }
+
+    .hero-statement {
+        grid-row: 2/3;
+    }
+    .issue {
+        margin-bottom: 8vh;
+    }
+    .issue-head {
+        width: 17vw;
+        font-size: 1.7vw;
+        left: 7vw;
+    }
+    .message {
+        padding: 2vh 3vw 6.5vh 7vw;
+    }
+    .message-text {
+        font-size: 4.5vw;
+    }
+    .message-link {
+        font-size: 2vw;
+    }
+
+    .action-menu .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 8vh;
+        grid-column-gap: 8.2vw; 
+        padding: 7.5vh 0;
+    }
+    .action > h3 {
+        font-size: 3.3vw;
+        margin-bottom: 1vh;
+    }
+    .action > p {
+        font-size: 2.4vw;
+    }
+    .action-head {
+        font-size: 1.8vw;
+        padding: 2vh;
+        width: 16vw;
+        top: -3vh;
+        margin-left: 50%;
+        left: -10vw;
+    }
+
+    .mission-head {
+        font-size: 2vw;
+        width: 16vw;
+        padding: 2.2vh;
+    }
+
+    .mission-text {
+        font-size: 4.3vw;
+    }
+
+    .missions {
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: 1fr;
+        margin-bottom: 9vh;
+    }
+
+    .mission {
+        grid-template-columns: 0.90fr 1.10fr;
+        grid-template-rows: 1.44fr 0.56fr;
+    }
+    .pic {
+        left: 3.5vw;
+    }
+    .mission-subject {
+        grid-area: 1/2/3/3;
+        padding: 4vh 3.5vw 4vh 7vw;
+    }
+    .mission-subject > h3 {
+        font-size: 3.5vw;
+    }
+    .mission-subject > p {
+        font-size: 2.45vw;
+    }
+
+    .read-more-btn {
+        text-align: right;
+    }
+    .read-more-btn > button {
+        font-size: 2.3vw;
+        padding: 1.7vh 3.4vw;
+        margin-right: -3.5vw;
+    }
+
+    .facts-section {
+        background: transparent url('../Images/home-T-3.png') 0% 0% no-repeat padding-box;
+        opacity: 1;
+        background-size: 100% 100%; 
+    }
+
+    .facts-section .wrapper {
+        display: grid;
+        grid-template-columns: 0.6fr 1.4fr;
+        padding: 10vh 0;
+    }
+
+    .facts-tagline {
+        font-size: 5vw;
+        padding: 0 12vw 4vh 0;
+    }
+
+    .take-action-btn > button {
+        padding: 2vh 4vw;
+        font-size: 2.3vw;
+    }
+
+    .facts {
+        grid-gap: 6vh;
+    }
+    .fact {
+        padding: 5vh 4vw;
+    }
+    .fact-head {
+        font-size: 2vw;
+        padding: 2vh 2vw;
+        top: -3.4vh;
+    }
+
+    .sub-1 > h3 {
+        font-size: 4.5vw;
+    }
+    .sub-2 > p {
+        font-size: 2vw; 
+        line-height: 4vh; 
+    }
+
+    .icon-1 {
+        margin-top: 0; 
+        margin-bottom: 2vh; 
+    }
+    .icon-2 {
+        margin-bottom: 0;
+        margin-top: 2vh;
+    }
+}
+
+@media (max-width: 490px) {
+    .header .wrapper {
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 25vh;
+        grid-column-gap: 21vw;
+    }
+
+    .logo {
+        grid-area: 1/1/2/2;
+        align-self: center;
+        padding-top: 3vh;
+        font-size: 4vw;
+    }
+
+    .menu {
+        grid-area: 1/2/2/3;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr; 
+        padding-top: 2.5vh;
+        grid-gap: 1vh;
+        font-size: 3vw;
+    }
+    .about {
+        grid-area: 1/1/2/2;
+    }
+    .stories {
+        grid-area: 2/1/3/2;
+    }
+    .news {
+        grid-area: 3/1/4/2;
+    }
+
+    .donate-btn {
+        grid-area: 2/1/3/3;
+        text-align: center;
+    }
+    .donate-btn > button {
+        width: 100%;
+        font-size: 4vw;
+    }
+
+    .hero-section {
+        background: transparent url('../Images/home-M-1.png') 0% 0% no-repeat padding-box;
+        background-color: #354463;
+        background-size: 100% 100%;
+        height: 75vh;
+    }
+    .hero-section .wrapper {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .hero-statement {
+        grid-row: 2/3;
+        padding-bottom: 2.5em;
+    }
+    .issue {
+        margin: auto;
+        padding: 0;
+    }
+    .issue-head {
+        font-size: 2.9vw;
+        left: 26vw;
+        width: 25vw;
+    }
+    .message {
+        padding: 2.5vh 2.5vw 3vh 2.5vw;
+    }
+    .message-text {
+        font-size: 5.7vw;
+        text-align: center;
+    }
+    .message-link {
+        font-size: 3vw;
+        padding-bottom: 1em;
+        text-align: center;
+    }
+
+    .slogan {
+        font-size: 8vw;
+        padding-top: 0;
+    }
+
+    .action-menu .wrapper {
+        grid-row-gap: 4vh;
+        grid-column-gap: 5vw; 
+        padding: 8.5vh 0;
+    }
+    .action > h3 {
+        font-size: 4vw;
+        margin-bottom: 1vh;
+    }
+    .action > p {
+        font-size: 3.3vw;
+    }
+    .action-head {
+        font-size: 3vw;
+        padding: 2.3vh;
+        width: 34vw;
+        top: -3vh;
+        margin-left: 50%;
+        left: -20vw; 
+    }
+
+    .mission-head {
+        font-size: 3.1vw;
+        width: 34vw;
+        margin-top: 7vh;
+        margin-left: 19vw;
+    }
+
+    .mission-text {
+        text-align: center;
+        font-size: 5.4vw;
+        margin-top: 3vh;
+        margin-bottom: 11vh; 
+    }
+
+    .missions {
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 13vh;
+        margin-bottom: 8vh;
+    }
+
+    .mission {
+        grid-template-rows: 1.3fr 1fr 0.5fr;
+        grid-template-columns: 1fr;
+        padding: 0 7vw;
+        text-align: center;
+    }
+    .pic {
+        grid-area: 1/1/2/2;
+        left: 0;
+        top: -7vw;
+    }
+
+    .mission-subject {
+        grid-area: 2/1/3/2;
+        padding: 0;
+        text-align: center;
+    }
+    .mission-subject > h3 {
+        font-size: 4.7vw;
+        font-weight: bold;
+    }
+    .mission-subject > p {
+        font-size: 3.7vw;
+    }
+
+    .read-more-btn {
+        grid-area: 3/1/4/2;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4vh;
+    }
+    .read-more-btn > button {
+        margin: 0;
+        font-size: 4vw;
+        padding: 1.7vh 7vw;
+    }
+
+    .facts-section {
+        background: transparent url('../Images/home-M-3.png') 0% 0% no-repeat padding-box;
+        background-size: 100% 100%;
+    }
+
+    .facts-section .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        padding: 12vh 0 7vh 0;
+        grid-gap: 4vh;
+    }
+    
+    .facts-tagline {
+        font-size: 10vw;
+    }
+
+    .take-action-btn > button {
+        font-size: 3.7vw;
+    }
+
+    .fact {
+        padding: 7vw;
+    }
+    .fact-head {
+        font-size: 3vw;
+        padding: 2.5vh 3vw;
+        left: 23vw;
+        top: -4vh;
+    }
+    .sub-1 > h3 {
+        font-size: 6vw;
+    }
+    .sub-2 > p {
+        font-size: 3.3vw;
+    }
+
+    .icon {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        padding-top: 0.5vh;
+    }
+}
